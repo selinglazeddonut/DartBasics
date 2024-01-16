@@ -37,7 +37,10 @@ bool sonuc= ciftMi(ornek_sayi);
   //direk türünü yazarak da atama yapabilirsin
   int maas=300000;
   String isim="Selin";
-  print("ismim $isim");
+  print("ismim $isim maaşım $maas");
+
+print(isim.length);
+
 
 }
 
