@@ -16,19 +16,19 @@
     return (toplam); //print dersen null dusuyor ve döndurdugu bisi olmuyo
   }
 
-//----------Data Structures-------
-//list: ordered collections of elements, can have duplicates.
-  List numbers = [1, 2, 3];
+void main(){
+  alanHesapla(5,10);
 
-  void printNumbers() {
-    for (int i = 0; i < numbers.length; i++) {
-      print(numbers[i]);
-    }
-  }
- //set: underordered=sirali koleksiyon of unique elements
-Set<String> uniqueNames={"Selin","17Nisan","Eskisehir"};
-  //map :Stored key and value pairs
- Map user={
-   'name':"selin",
-   'gender':"female"
- };
+  print("carpim ${sayilariCarp(2, 24)}");
+
+}
+
+alanHesapla(int sayi1,int sayi2){ //parametreli deger donduren fonk
+  int deger=(sayi1*sayi2);
+  print("alan${deger}");
+}
+
+//fat arrow kullanimi
+int sayilariCarp(int a1,int a2)=>a1*a2;
+
+//optional parametre suslu parantez, default parametre koseli parantez
